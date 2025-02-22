@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
+    background: #ffffff;
     color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -91,4 +93,30 @@ footer {
     font-size: 20px;
     color: white;
     color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+/* Dark Mode Navbar */
+.dark-mode header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Button Styling */
+#dark-mode-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Dark Mode Toggle Button Hover */
+#dark-mode-toggle:hover {
+    transform: scale(1.1);
 }
